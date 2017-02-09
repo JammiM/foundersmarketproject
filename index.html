@@ -14,16 +14,10 @@
 	<meta property="og:url" content="http://foundersmarketapp.com" />
 	<meta property="og:image" content="http://foundersmarketapp.com/img/facebook_graph.png" />
 
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
-
-
 	<link media="all" type="text/css" rel="stylesheet" href="css/normalize.css">
 	<link media="all" type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
 	<link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 	<link media="all" type="text/css" rel="stylesheet" href="css/style.css">
-
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -38,36 +32,35 @@
 
 </head>
 <body>
-	<header class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				 </button>
-				<a class="navbar-brand" href="/">
-					<img src="http://foundersmarketapp.com/img/logo_250.png" class="navIcon" alt="Founders Market">
-					<span class="sr-only">http://foundersmarketapp.com</span>
-				</a>
-			</div>
-	      <div class="collapse navbar-collapse nav-collapse">
-	        <div class="navbar-left">
-	          <ul class="nav navbar-nav navbar-left">
-	            <li>
-	              <form id="loginForm" method="POST" action="http://foundersmarketapp.com/login" accept-charset="UTF-8" class="navbar-form" style="width:500px;">                                   <input name="_token" type="hidden" value="soxYbUc4Qx6bxEC5m9zZS6Vevf3pEEsLTIkSnopu">
-	                <div class="row">
-	                  <input class="nav-form-element col-xs-12 col-md-3 col-lg-3" placeholder="Email" name="email" type="text">
-	                  <input class="nav-form-element col-xs-12 col-md-3 col-lg-3" placeholder="Password" name="password" type="password" value="">
-	                  <input class="button button-primary nav-form-element col-xs-12 col-md-2 col-lg-2" type="submit" value="Login">
-	                  <a href="#" class="button nav-form-element col-xs-12 col-md-4 col-lg-4">Forgot Password ?</a> <!--  http://foundersmarketapp.com/register -->
-	                </div>
-	              </form>
-	            </li>
-	          </ul>
-	        </div>
-	      </div>
-	    </div>
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					 </button>
+					<a class="navbar-brand" href="#">
+						<img src="http://foundersmarketapp.com/img/logo_250.png" class="navIcon" alt="Founders Market">
+						<span class="sr-only">http://foundersmarketapp.com</span>
+					</a>
+				</div><!-- navbar-header -->
+				<div id="navbar" class="navbar-collapse collapse">
+					<form id="loginForm" class="navbar-form navbar-right" method="POST" action="http://foundersmarketapp.com/login" accept-charset="UTF-8" role="form">
+						<div class="form-group">
+							<input type="text" placeholder="Email" name="email" class="form-control">
+						</div>
+						<div class="form-group">
+							<input type="password" placeholder="Password" name="password" value="" class="form-control">
+						</div>
+						<button  type="submit" class="brightBlueBtn btn btn-success" value="LOGIN">LOGIN</button>
+						<button id="forgotPasswordBtn" type="submit" class="btn btn-success">Forgot Password ?</button>
+					</form>
+				</div><!-- collapse navbar-collapse nav-collapse -->
+			</div><!-- container -->
+		</nav>
 	</header>
 
 	<main class="container">
