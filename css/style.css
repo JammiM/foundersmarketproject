@@ -110,7 +110,7 @@ article{
 }
 
 main.container{
-	margin-top: 100px;
+	/* margin-top: 100px; */
 	margin-bottom: 50px;
 }
 
@@ -150,6 +150,10 @@ main img{
 .skill{
 	margin-left: 10px;
 }
+
+
+
+/* --------------- HOME PAGE / USERS PAGE --------------------- */
 
 .person-details {
 	color: #555;
@@ -232,6 +236,13 @@ select{
 }
 
 
+/* --------------- /HOME PAGE / USERS PAGE --------------------- */
+
+
+
+/* --------------- FOOTER --------------------- */
+
+
 footer{
 	border-top: 1px #e7e7e7 solid;
 	padding-top: 15px;
@@ -252,6 +263,15 @@ footer ul li:after{
 footer ul li:last-of-type:after{
 	content:none;
 }
+
+
+
+/* --------------- /FOOTER --------------------- */
+
+
+
+
+
 
 .include-breaks{
 	white-space:pre-wrap;
@@ -336,6 +356,10 @@ footer ul li:last-of-type:after{
 	color: white;
 }
 
+
+/* --------------- SOCIAL MEDIA WITHIN NEWS ITEM --------------------- */
+
+
 .twitter{
 	background: #00ACED;
 	font-size: 2em;
@@ -366,11 +390,20 @@ a.google-plus:hover{
 	opacity: 0.8;
 }
 
+
+/* --------------- SOCIAL MEDIA WITHIN NEWS ITEM --------------------- */
+
+
 .dropdown:hover .dropdown-menu{
 	display:block;
 }
 
-/* UTILITIES */
+
+
+/* --------------- UTILITIES --------------------- */
+
+
+
 .u-left-align{
 	text-align: left;
 }
@@ -391,6 +424,17 @@ a.google-plus:hover{
 	font-weight: 500;
 }
 
+
+/* --------------- HOME PAGE --------------------- */
+
+.mainBannerImage {
+	width:100%;
+	height:auto;
+}
+
+#primaryHeading {
+	text-align: center;
+}
 
 
 
@@ -419,9 +463,11 @@ a.google-plus:hover{
 /* --------------- MEDIA QUERIES --------------------- */
 
 @media all and (max-width: 700px){
+	/*
 	main{
 		margin-top: 200px;
 	}
+	*/
 
 	#directory-page .three.columns{
 		width: 100%;
@@ -452,7 +498,14 @@ a.google-plus:hover{
 	}
 }
 
+
+/*	Screen widths ( Tablets ) greater than 700px.	*/
 @media all and (min-width: 700px){
+
+	.mainBannerImage {
+		height: 150px;
+	}
+
 	.thumb{
 		display: block;
 	    overflow: hidden;
