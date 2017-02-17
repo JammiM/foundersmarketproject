@@ -458,6 +458,17 @@ a.google-plus:hover{
 }
 
 
+/* --------------- REGISTER PAGE --------------------- */
+
+#registerBlock {
+	background-color:  #f8f8f8;
+	border: 2px solid #e7e7e7;
+	border-radius: 10px;
+}
+
+#registerBtn {
+	margin: 10px 0px;
+}
 
 
 /* --------------- MEDIA QUERIES --------------------- */
