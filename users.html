@@ -33,101 +33,61 @@
 </head>
 <body>
 
-<header class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header">
-			 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			 </button>
-			<a class="navbar-brand" href="/">
-				<img src="http://foundersmarketapp.com/img/logo_250.png" class="navIcon" alt="Founders Market">
-				<span class="sr-only">http://foundersmarketapp.com</span>
-			</a>
-		</div>
-		<div class="collapse navbar-collapse nav-collapse">
-
-							<ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="http://foundersmarketapp.com/enter-idea-competition" class="button"
-                           style="color:white;background:red;font-size: 12px;padding:10px 15px;height:auto;margin-top:5px;"
-                           title="Enter App Competition">Enter Competition</a>
-                    </li>
-					<li>
-	                	<a href="http://foundersmarketapp.com/home?username=jamesmorrissey">
-	                		<i title="Profile" class="fa fa-newspaper-o">
-	                			<span> News</span>
-	                		</i>
-	                	</a>
-	                </li>
-	                <li>
-	                	<a href="http://foundersmarketapp.com/users">
-	                		<i title="Groups" class="fa fa-users">
-	                			<span> People</span>
-	                		</i>
-	                	</a>
-	                </li>
-	                <li>
-	                	<a href="http://foundersmarketapp.com/messages">
-	                		<i title="Groups" class="fa fa-envelope-o">
-	                			<span>
-	                				Messages
-	                					                			</span>
-	                		</i>
-	                	</a>
-	                </li>
-
-
-	                <li class="dropdown">
-	                	<a href="http://foundersmarketapp.com/profile/jamesmorrissey">
-	                		<i title="Profile" class="fa fa-user">
-	                			<span> My Profile <b class="caret"></b></span>
-	                		</i>
-	                	</a>
-	                	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						  	<li role="presentation">
-						  		<a role="menuitem" href="http://foundersmarketapp.com/edit/jamesmorrissey">
-			                		<i title="Edit Profile" class="fa fa-pencil">
-			                			<span> Edit Profile</span>
-			                		</i>
-			                	</a>
-						 	<li>
-						 	<li role="presentation">
-						  		<a role="menuitem" href="http://foundersmarketapp.com/logout">
-			                		<i title="Logout" class="fa fa-sign-out">
-			                			<span> Logout</span>
-			                		</i>
-			                	</a>
-						 	<li>
-
-						</ul>
-	                </li>
-
-	                <li class="dropdown">
-	                	<a href="http://foundersmarketapp.com/about" type="button">
-						    <i title="About" class="fa fa-info-circle">
-	                			<span> About <b class="caret"></b></span>
-	                		</i>
-						</a>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-
-						 	<li role="presentation">
-						  		<a role="menuitem" href="mailto:evan@foundersmarketapp.com">
-			                		<i title="Suggest A Feature" class="fa fa-info-circle">
-			                			<span> Suggest A Feature </span>
-			                		</i>
-			                	</a>
-						 	<li>
-
-						</ul>
-	                </li>
-
-
-	            </ul>
-					</div>
-    </div>
-</header>
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					 </button>
+					<a class="navbar-brand" href="#">
+						<img src="http://foundersmarketapp.com/img/logo_250.png" class="navIcon" alt="Founders Market">
+						<span class="sr-only">http://foundersmarketapp.com</span>
+					</a>
+				</div><!-- navbar-header -->
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right" >
+						<li>
+							<a href="http://foundersmarketapp.com/home?username=jamesmorrissey">
+								<i title="Profile" class="fa fa-newspaper-o"></i> News
+							</a>
+						</li>
+						<li>
+							<a href="http://foundersmarketapp.com/users">
+								<i title="Groups" class="fa fa-users"></i> People
+							</a>
+						</li>
+						<li>
+							<a href="http://foundersmarketapp.com/messages">
+								<i title="Groups" class="fa fa-envelope-o">
+								</i> Messages
+							</a>
+						</li>
+						<li class="dropdown">
+		 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i title="Groups" class="fa fa-user"> My Profile</i><span class="caret"></span></a>
+	 							<ul class="dropdown-menu" role="menu">
+	 								<li><a href="#"><i class="fa fa-pencil"> Edit Profile</i></a></li>
+	 								<li><a href="#"><i class="fa fa-sign-out"> Log out</i></a></li>
+								</ul>
+						</li><!-- .dropdown -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-info-circle"> About</i><span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a role="menuitem" href="mailto:evan@foundersmarketapp.com">
+	              		<i title="Suggest A Feature" class="fa fa-info-circle"><span> Suggest A Feature </span></i>
+	              	</a>
+								</li>
+							</ul>
+						</li><!-- .dropdown -->
+					</ul>
+				</div><!-- collapse navbar-collapse nav-collapse -->
+			</div><!-- container -->
+		</nav>
+	</header>
 
 <main class="container">
 
